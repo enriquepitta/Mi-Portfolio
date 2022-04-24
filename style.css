@@ -28,52 +28,63 @@
     /* VISUAL */
     background-color: var(--background-card-color);
 }
-/* SWITCHES, CAMBIO DE COLOR DARK/LIGHT MODE */
+/* SWITCHES CONTENEDOR, CAMBIO DE COLOR DARK/LIGHT MODE */
 .switches{
     /* BOX MODEL */
     display: flex;
 
     /* POSITION */
     align-items: center;
-    justify-content: space-between;
+    gap: 10px;
 }
-/* ESTILIOS DEL TOGGLE DARK MODE */
+/*======================= TOOGLE ===========================*/
+/* ESTILOS DEL TOGGLE */
 .toggle-theme{
-    /* BOX MODEL */
-    display: flex;
-    
-    /* POSITION */
-    align-items: center;
-    justify-content: center;
-
-    /* OTROS */
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 20px;
+    border-radius: 160px;
+    background: #222;
+    transition: 0.5s;
     cursor: pointer;
+    box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
+                inset 0 8px 8px rgba(0, 0, 0, 0.1),
+                inset 0 -4px 4px rgba(0, 0, 0, 0.1);         
 }
-/* ESTILO DEL TOGGLE THEME ICON */
-.toggle-theme__icon{
-    margin-right: .5em;
+/* ESTILOS AL ACTIVAR EL TOGGLE */
+#toggle-theme.active{
+    background: #fff;
+    box-shadow: inset 0 2px 60px rgba(0, 0, 0, 0.1),
+                inset 0 2px 8px rgba(0, 0, 0, 0.1),
+                inset 0 -4px 4px rgba(0, 0, 0, 0.05),;
+}
+/* TOGGLE INDICATOR */
+#toggle-theme .indicator{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 20px;
+    height: 20px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    transform: scale(0.9);
+    box-shadow: inset 0 4px 4px rgba(21, 20, 20, 0.5),
+                inset 0 -4px 4px rgba(21, 20, 20, 0.5);
+    transition: 0.5s;
+}
+/* ESTILOS DEL TOGGLE-INDICATOR AL ACTIVAR EL TOGGLE */
+#toggle-theme.active .indicator{
+    left: 20px;
+    background: var(--primary-color);
+    box-shadow: inset 0 4px 4px rgba(21, 20, 20, 0.5),
+    inset 0 -4px 4px rgba(21, 20, 20, 0.5);
 }
 /* ESTILO DEL TOGGLE THEME TEXT */
 .toggle-theme__text{
     font-size: 0.8rem;
 }
-/* ====================== BODY ========================== */
-/* ESTILOS DEL BODY */
-body{
-    /* VISUAL */
-    background-color: var(--backgraund-color);
-
-    /* TEXT */
-    color: var(--text-color);
-}
-/* ESTILOS DEL BODY CUANDO TENGA LA CLASE DARK */
-  /* CAMBIOS PARA EL TEXT-COLOR Y BACKGROUND-COLOR */
-body.dark{
-    --text-color: hsl(0, 0%, 83%);
-    --backgraund-color: hsl(0, 0%, 15%);
-    --background-card-color: hsl(0, 0%, 20%)
-}
+/* ================== COLORS ========================== */
 /* ESTILOS DEL CONTENEDOR DE LOS COLORES */
 .colors{
     /* BOX MODEL */
@@ -113,6 +124,23 @@ body.dark{
 
 .colors__item-orange {
     --primary-color: hsl(10, 84%, 56%);
+}
+
+/* ====================== BODY ========================== */
+/* ESTILOS DEL BODY */
+body{
+    /* VISUAL */
+    background-color: var(--backgraund-color);
+
+    /* TEXT */
+    color: var(--text-color);
+}
+/* ESTILOS DEL BODY CUANDO TENGA LA CLASE DARK */
+  /* CAMBIOS PARA EL TEXT-COLOR Y BACKGROUND-COLOR */
+body.dark{
+    --text-color: hsl(0, 0%, 83%);
+    --backgraund-color: hsl(0, 0%, 15%);
+    --background-card-color: hsl(0, 0%, 20%)
 }
 
 h1{
