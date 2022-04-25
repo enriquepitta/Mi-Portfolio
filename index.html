@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
     <title>Enrique Pitta - Portfolio</title>
@@ -21,7 +24,7 @@
         </div>
         <!-- CONTENEDOR DEL SELECTOR DE LOS COLORES -->
         <div id="toggle-colors" class="colors">
-            <div data-color="hsl(214, 84%, 56%)" class="colors__item colors__item-blue"></div>
+            <div data-color="#00E8C0" class="colors__item colors__item-lightBlue"></div>
 
             <div data-color="hsl(150, 84%, 56%)" class="colors__item colors__item-green"></div>
 
@@ -30,7 +33,41 @@
             <div data-color="hsl(10, 84%, 56%)" class="colors__item colors__item-orange"></div>
         </div>
     </header>
-    <h1>Mi primer portfolio</h1>
+    <!-- MAIN, CONTENIDO DEL PORTFOLIO -->
+    <main class="main">
+        <!-- COLUMNA DE LA IZQUIERDA -->
+        <section class="column column--left">
+            <!-- PROFILE CARD -->
+            <article class="card card--profile">
+                <div class="card__image-container">
+                    <img src="/assets/images/profile2.jfif" alt="">
+                </div>
+                <div class="card__header">
+                    <h2 class="card__title">Enrique Pitta</h2>
+                    <p class="card__subtitle">Jr. Developer</p>
+                </div>
+                <div class="card__body">
+                    <div class="card__link">
+                        <img class="icon icon-mail" src="assets/icons/email.png" alt="" >
+                        <a href="mailto:enriquearielpitta@gmail.com">enriquearielpitta@gmail.com</a>
+                    </div>
+                    <div class="card__link">
+                        <img src="assets/icons/llamada.png" alt="" class="icon icon-tel">
+                        <a href="tel:0985941789">+595-0985941789</a>
+                    </div>
+                    <div class="card__link">
+                        <img src="assets/icons/linkedin.png" alt="" class="icon icon-tel">
+                        <a href="https://www.linkedin.com/in/enrique-pitta">Linkedin</a>
+                    </div>
+                    <div class="card__link">
+                        <img src="assets/icons/github.png" alt="" class="icon icon-tel">
+                        <a href="https://github.com/enriquepitta">Github</a>
+                    </div>
+                    <p class="card__text">Programador, con intenciones de superarme en todos los aspectos de mi vida, brindando lo mejor de mí cada día, tanto en el aspecto laboral como en el aspecto personal.</p>
+                </div>
+            </article>
+        </section>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
