@@ -140,8 +140,8 @@
 .colors__item-red {
   --primary-color: #FF2E63;
 }
-.colors__item-yellow{
-  --primary-color: #F9FFA4;
+.colors__item-purple{
+  --primary-color: #5800FF;
 }
 /* ====================== BODY ========================== */
 /* ESTILOS DEL BODY */
@@ -203,6 +203,8 @@ img {
 /* ESTILOS PARA LOS TEXTOS */
 .text-profile{
   margin: 0;
+  font-size: .9em;
+  line-height: 1.5;
 }
 .card__header {
   /* POSITION */
