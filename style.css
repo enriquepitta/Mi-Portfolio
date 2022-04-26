@@ -2,7 +2,7 @@
 :root {
   --primary-color: #00e8c0;
   --text-color: hwb(0 0% 100%);
-  --backgraund-color: hsl(0, 0%, 90%);
+  --backgraund-color: hsl(0, 0%, 88%);
   --background-card-color: hsl(0, 0%, 98%);
   --transition: color 0.1s, background-color 0.2s ease-in-out;
   --border-radius: 0.4em;
