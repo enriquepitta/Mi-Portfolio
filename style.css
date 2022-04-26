@@ -140,7 +140,7 @@
   --primary-color: #FF2E63;
 }
 .colors__item-yellow{
-  --primary-color: #F6FFA4;
+  --primary-color: #F6F54D;
 }
 /* ====================== BODY ========================== */
 /* ESTILOS DEL BODY */
@@ -206,6 +206,8 @@ img {
   margin: 0;
   /* TEXT */
   font-size: 1.2rem;
+  font-weight: bolder;
+  
 }
 .card__subtitle {
   /*TEXT*/
