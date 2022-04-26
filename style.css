@@ -233,11 +233,9 @@ img {
   display: grid;
   gap: 1em;
 }
-.column--right{
-  display: grid;
-  grid-auto-rows:min-content;
-  grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
-} 
+/* .column--right{
+  
+}  */
 /* ESTILOS PARA LOS SKILLS */
 .skills__item{
   display: flex;
@@ -305,7 +303,8 @@ img {
   align-items: start;
   
   /* VISUAL */
-  border: 2px solid var(--primary-color);
+  background-color: rgb(27, 26, 26);
+  border: 4px solid var(--primary-color);
   border-radius: var(--border-radius);
   
   /* OTROS */
@@ -341,10 +340,34 @@ img {
 }
 
 .border__hobbies{
-  border: 2px solid var(--primary-color);
+  background-color: rgb(27, 26, 26);
+  border: 4px solid var(--primary-color);
   border-radius: var(--border-radius);
   margin-top: 1em;
   margin-bottom: 1em;
   padding: 1em;
   align-items: start;
+}
+.card__title-skills{
+  font-size: 30px;
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+.card__sub{
+  background-color: rgb(27, 26, 26);
+  border: 4px solid var(--primary-color);
+
+}
+.card__container-skills{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(19em, 1fr));
+  gap: 1em;
+}
+.card-skills{
+  padding: 1em;
+  background-color: var(--background-card-color);
+  border-radius: var(--border-radius);
+  border-top: 4px solid var(--primary-color);
+  height: max-content;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Enrique Pitta - Portfolio</title>
 </head>
+
 <body class="dark">
     <!-- HEADER, CONTENEDOR DEL SWITCH (DARK MODE) Y COLORES -->
     <header class="header">
@@ -50,7 +52,7 @@
                 </div>
                 <div class="card__body">
                     <div class="card__link">
-                        <img class="icon" src="assets/icons/email.png" alt="" >
+                        <img class="icon" src="assets/icons/email.png" alt="">
                         <a href="mailto:enriquearielpitta@gmail.com">enriquearielpitta@gmail.com</a>
                     </div>
                     <div class="card__link">
@@ -69,8 +71,9 @@
                         <img src="assets/icons/github.png" alt="" class="icon">
                         <a href="https://github.com/enriquepitta">Github</a>
                     </div>
-                    <p class="card__text">Programming student, with the intention of improving myself in all aspects of my life, giving the best of me every day,
-                    both in the work aspect and in the personal aspect.</p>
+                    <p class="card__text">Programming student, with the intention of improving myself in all aspects of
+                        my life, giving the best of me every day,
+                        both in the work aspect and in the personal aspect.</p>
                 </div>
             </article>
             <!-- TARJETA DE EXPERIENCIA -->
@@ -83,7 +86,8 @@
                             Feb 2022 - Mar 2022
                         </p>
                         <h3 class="experience__job">Bootcamper</h3>
-                        <p class="experience__description">Realization of group project, mobile application for IOS using Swift, Xcode, GitHub, cocoapods and other tools.</p>
+                        <p class="experience__description">Realization of group project, mobile application for IOS
+                            using Swift, Xcode, GitHub, cocoapods and other tools.</p>
                     </div>
                 </div>
             </article>
@@ -103,78 +107,90 @@
                         <img src="assets/images/hobbie2.jpg">
                     </div>
                     <h3 class="card__subtitle card__subtitle-hobbies">Biking</h3>
-                    <p class="card__text">I like to ride my bike with friends on the weekends, I find it very fun to exercise from time to time.</p>
+                    <p class="card__text">I like to ride my bike with friends on the weekends, I find it very fun to
+                        exercise from time to time.</p>
                 </div>
                 <div class="border__hobbies">
                     <div class="card__image-container">
                         <img src="assets/images/hobbie3.jpg">
                     </div>
                     <h3 class="card__subtitle card__subtitle-hobbies">Reading</h3>
-                    <p class="card__text">I like to read because it is very relaxing and helps me a lot to relieve stress.</p>
+                    <p class="card__text">I like to read because it is very relaxing and helps me a lot to relieve
+                        stress.</p>
                 </div>
                 <div class="border__hobbies">
                     <div class="card__image-container">
                         <img src="assets/images/hobbie.jpg">
                     </div>
                     <h3 class="card__subtitle card__subtitle-hobbies">Chess</h3>
-                    <p class="card__text">I like chess because it teaches me to learn from my mistakes and be less impulsive.<p>
+                    <p class="card__text">I like chess because it teaches me to learn from my mistakes and be less
+                        impulsive.
+                    <p>
                 </div>
             </articles>
         </section>
         <!-- COLUMNA DE LA DERECHA -->
         <secction class="column column--right">
             <!-- TARJETA FRONT-END -->
-            <article class="card">
-                <h2 class="card__title">Front-End</h2>
-                <div class="skills">
-                    <div class="skills__item">
-                        <p class="skills__tech">HTML</p>
-                        <div class="skills__bar skills__bar--30"></div>
-                    </div>
-                    <div class="skills__item">
-                        <p class="skills__tech">CSS</p>
-                        <div class="skills__bar skills__bar--30"></div>
-                    </div><div class="skills__item">
-                        <p class="skills__tech">JavaScript</p>
-                        <div class="skills__bar skills__bar--40"></div>
-                    </div>
+            <div class="card-skills">
+                <h1 class="card__title-skills">Skills</h2>
+                <div class="card__container-skills">
+
+                    <article class="card card__sub">
+                        <h2 class="card__title">Front-End</h2>
+                        <div class="skills">
+                            <div class="skills__item">
+                                <p class="skills__tech">HTML</p>
+                                <div class="skills__bar skills__bar--30"></div>
+                            </div>
+                            <div class="skills__item">
+                                <p class="skills__tech">CSS</p>
+                                <div class="skills__bar skills__bar--30"></div>
+                            </div>
+                            <div class="skills__item">
+                                <p class="skills__tech">JavaScript</p>
+                                <div class="skills__bar skills__bar--40"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- TARJETA MOBILE DEVELOPER -->
+                    <article class="card card__sub">
+                        <h2 class="card__title">Mobile Developer</h2>
+                        <div class="skills">
+                            <div class="skills__item">
+                                <p class="skills__tech">Swift</p>
+                                <div class="skills__bar skills__bar--50"></div>
+                            </div>
+                            <div class="skills__item">
+                                <p class="skills__tech">Xcode</p>
+                                <div class="skills__bar skills__bar--60"></div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- TARJETA SO -->
+                    <article class="card card__sub">
+                        <h2 class="card__title">Operating Systems</h2>
+                        <div class="skills">
+                            <div class="skills__item">
+                                <p class="skills__tech">Windows</p>
+                                <div class="skills__bar skills__bar--70"></div>
+                            </div>
+                            <div class="skills__item">
+                                <p class="skills__tech">Linux</p>
+                                <div class="skills__bar skills__bar--60"></div>
+                            </div>
+                            <div class="skills__item">
+                                <p class="skills__tech">Mac</p>
+                                <div class="skills__bar skills__bar--40"></div>
+                            </div>
+                        </div>
+                    </article>
                 </div>
-            </article>
-            <!-- TARJETA MOBILE DEVELOPER -->
-            <article class="card">
-                <h2 class="card__title">Mobile Developer</h2>
-                <div class="skills">
-                    <div class="skills__item">
-                        <p class="skills__tech">Swift</p>
-                        <div class="skills__bar skills__bar--50"></div>
-                    </div>
-                    <div class="skills__item">
-                        <p class="skills__tech">Xcode</p>
-                        <div class="skills__bar skills__bar--60"></div>
-                    </div>
-                </div>
-            </article>
-            <!-- TARJETA SO -->
-            <article class="card">
-                <h2 class="card__title">Operating Systems</h2>
-                <div class="skills">
-                    <div class="skills__item">
-                        <p class="skills__tech">Windows</p>
-                        <div class="skills__bar skills__bar--70"></div>
-                    </div>
-                    <div class="skills__item">
-                        <p class="skills__tech">Linux</p>
-                        <div class="skills__bar skills__bar--60"></div>
-                    </div>
-                    <div class="skills__item">
-                        <p class="skills__tech">Mac</p>
-                        <div class="skills__bar skills__bar--40"></div>
-                    </div>
-                </div>
-            </article>
-            
+            </div>
         </secction>
     </main>
     <script src="script.js"></script>
 </body>
+
 </html>
