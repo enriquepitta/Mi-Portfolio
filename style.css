@@ -231,14 +231,11 @@ img {
   display: grid;
   gap: 1em;
 }
-
-/* MEDIA QUERIES */
-@media screen and (min-width: 720px) {
-  .column--right {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, min-content);
-  }
-}
+.column--right{
+  display: grid;
+  grid-auto-rows:min-content;
+  grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+} 
 /* ESTILOS PARA LOS SKILLS */
 .skills__item{
   display: flex;
