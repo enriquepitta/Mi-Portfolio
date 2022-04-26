@@ -133,14 +133,14 @@
 .colors__item-green {
   --primary-color: hsl(150, 84%, 56%);
 }
-.colors__item-purple {
-  --primary-color: #48466D;
+.colors__item-blue {
+  --primary-color: #035397;
 }
 .colors__item-red {
   --primary-color: #FF2E63;
 }
 .colors__item-yellow{
-  --primary-color: #F6F54D;
+  --primary-color: #F8CB2E;
 }
 /* ====================== BODY ========================== */
 /* ESTILOS DEL BODY */
