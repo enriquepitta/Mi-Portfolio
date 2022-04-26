@@ -231,6 +231,15 @@ img {
   width: 20px;
 }
 /* =======ESTILOS-COLUMN RIGHT============== */
+/* ESTILOS PARA LAS SUBTARJETAS */
+.card__sub{
+  /* VISUAL */
+  background-color: var(--background-subcard-color);
+  /* border: 4px solid var(--primary-color); */
+  box-shadow: 0px 0px 15px rgba(0,0,0,2.50);
+  padding: 1em;
+  border-radius: var(--border-radius); 
+}
 .column {
   display: grid;
   gap: 1em;
@@ -328,30 +337,37 @@ img {
   font-size: 0.8em;
 }
 /* ====================== CARD HOBBIES ====================== */
-.card__title-hobbies{
-  margin-bottom: 1em;
+/* ESTILOS PARA EL CONTENEDOR DE LOS HOBBIES */
+.card--hobbies{
+  display: grid;
+  gap: 1.5em;
+}
+.card__sub-hobbies{
+  padding: 0;
 }
 .card__subtitle-hobbies{
-  margin-top: 1.5em;
+  margin-top: 1em;
+  margin-left: 1em;
 }
 .card__text{
   margin-top: 0;
+  margin-left: 1em;
 }
-
+.image__container-subcard{
+  min-width: 320px;
+  border-top-right-radius: var(--border-radius);
+  border-top-left-radius: var(--border-radius);
+  overflow: hidden;
+}
 .card__title-skills{
   font-size: 23px;
   margin: 0;
   margin-bottom: 0.5em;
 }
-
-
 .card__container-skills{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(19em, 1fr));
   gap: 1em;
-  /* display: flex;
-  gap: 1.5em; */
-  
 }
 /* ESTILOS DEL CONTENEDOR DEL TITULO Y LAS SKILLS */
 .card-skills{
@@ -363,22 +379,4 @@ img {
   border-radius: var(--border-radius);
   border-top: 4px solid var(--primary-color);
   height: max-content;
-}
-/* ESTILOS PARA LAS SUBTARJETAS */
-.card__sub{
-  /* VISUAL */
-  background-color: var(--background-subcard-color);
-  /* border: 4px solid var(--primary-color); */
-  box-shadow: 0px 0px 15px rgba(0,0,0,2.50);
-  padding: 1em;
-  border-radius: var(--border-radius); 
-}
-/* .subskills{
-  width: 100%;
-  height: auto;
-} */
-/* ESTILOS PARA EL CONTENEDOR DE LOS HOBBIES */
-.card--hobbies{
-  display: grid;
-  gap: 1.5em;
 }
