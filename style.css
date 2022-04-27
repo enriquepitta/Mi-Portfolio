@@ -269,8 +269,13 @@ img {
   padding: 1em;
   border-radius: var(--border-radius); 
 }
-.column {
+.column--left {
   display: grid;
+  gap: 1em;
+}
+.column--right{
+  display: flex;
+  flex-direction: column;
   gap: 1em;
 }
 /* ESTILOS PARA LOS SKILLS */
@@ -394,4 +399,18 @@ img {
   border-top-right-radius: var(--border-radius);
   border-top-left-radius: var(--border-radius);
   overflow: hidden;
+}
+/* ==========ESTILOS PARA LA TARJETA PROJECTS===================== */
+.card__container-projects{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(19em, 1fr));
+  gap: 1em;
+}
+.card__projects{
+  display: grid;
+  gap: 1em;
+}
+.container__projects{
+  display: grid;
+  gap: 10px;
 }
