@@ -251,7 +251,7 @@ img {
 /* ESTILOS PARA EL CONTENEDOR DE SKILLS */
 .card__container-skills{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(19em, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
   gap: 1em;
 }
 /* ESTILOS DEL CONTENEDOR DEL TITULO Y LAS SKILLS */
