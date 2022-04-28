@@ -9,10 +9,10 @@ toggleColors.addEventListener('click', (e) => {
       rootStyles.setProperty('--primary-color', e.target.dataset.color)
     }
 })
-
+  
 // CUANDO ESCUCHA EL CLICK CAMBIAR LA CLASE AL BODY Y AL TOGGLE
 toggleTheme.addEventListener("click", () => {
     document.body.classList.toggle("dark")
     toggleTheme.classList.toggle("active")
-    toggleText.textContent = (toggleText.textContent == "Dark Mode" ? "Light Mode" : "Dark mode")
+  toggleText.textContent = (toggleText.textContent == "Dark Mode" ? "Light Mode" : "Dark mode")
 })

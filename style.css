@@ -186,6 +186,11 @@ img {
   }
 }
 /* ============ ESTILOS-COLUMNA LEFT =================== */
+.column--left {
+  display: grid;
+  gap: 1em;
+  height: fit-content;
+}
 .card {
   padding: 1em;
   background-color: var(--background-card-color);
@@ -270,10 +275,7 @@ img {
   border-radius: var(--border-radius);
   position: relative; 
 }
-.column--left {
-  display: grid;
-  gap: 1em;
-}
+
 .column--right{
   display: flex;
   flex-direction: column;
@@ -407,14 +409,12 @@ img {
 }
 .card__container-projects{
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 180px 1fr;
   gap: 1em;
   border-top-right-radius: var(--border-radius);
   border-top-left-radius: var(--border-radius);
   overflow: hidden;
 }
-
-
 
 .card__info-project{
   margin: 0.5em 0.5em;
