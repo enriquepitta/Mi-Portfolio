@@ -409,7 +409,7 @@ img {
 }
 .card__container-projects{
   display: grid;
-  grid-template-columns: 180px 1fr;
+  grid-template-columns: 190px 1fr;
   gap: 1em;
   border-top-right-radius: var(--border-radius);
   border-top-left-radius: var(--border-radius);
