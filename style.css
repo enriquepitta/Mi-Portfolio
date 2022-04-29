@@ -105,11 +105,11 @@
 }
 /* =============== TOGGLE LENGUAJES ================ */
 
-#toggle-lenguajes.active {
+#toggle-language.active {
   background: var(--background-card-color);
 }
 /* TOGGLE INDICATOR */
-#toggle-lenguajes .indicator {
+#toggle-language .indicator {
   /* POSITION */
   position: absolute;
   top: 0;
@@ -129,13 +129,13 @@
   transition: 0.5s;
 }
 /* ESTILOS DEL TOGGLE-INDICATOR AL ACTIVAR EL TOGGLE */
-#toggle-lenguajes.active .indicator {
+#toggle-language.active .indicator {
   left: 20px;
   background: var(--primary-color);
   box-shadow: inset 0 4px 4px rgba(21, 20, 20, 0.5),
     inset 0 -4px 4px rgba(21, 20, 20, 0.5);
 }
-.toggle__lenguaje-text {
+.toggle__language-text {
   font-size: 0.8em;
 }
 /* ================== COLORS ========================== */

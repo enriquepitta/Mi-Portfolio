@@ -1,7 +1,7 @@
 // OBTENER ELEMENTOS ATRAVEZ DE SU ID
 const toggleTheme = document.getElementById("toggle-theme")
-const toggleLenguajes = document.getElementById("toggle-lenguajes")
-const toggleLenguajesText = document.getElementById("english")
+const togleLanguage = document.getElementById("toggle-language")
+const togleLanguageText = document.getElementById("english")
 
 const toggleText = document.getElementById("toggle-text")
 const toggleColors = document.getElementById("toggle-colors")
@@ -20,14 +20,14 @@ toggleTheme.addEventListener("click", () => {
   toggleText.textContent = (toggleText.textContent == "Dark" ? "Light" : "Dark")
 })
 
-toggleLenguajes.addEventListener("click", (e) => { 
-  toggleLenguajes.classList.toggle("active")
-  toggleLenguajesText.textContent = (toggleLenguajesText.textContent == "English" ? "Español" : "English")
+togleLanguage.addEventListener("click", (e) => { 
+  togleLanguage.classList.toggle("active")
+  togleLanguageText.textContent = (togleLanguageText.textContent == "English" ? "Español" : "English")
 })
 
-toggleLenguajes.addEventListener("click", (e) => {
-  let lang = e.target.parentElement.dataset.languaje
-  lang = (lang == "en" ? "es" : "en")
-  console.log(lang)
-  
+togleLanguage.addEventListener("click", (e) => {
+  e.target.parentElement.dataset.language = (e.target.dataset.language == "en" ? "es" : "en")
+  e.target.dataset.language = e.target.parentElement.dataset.language 
+  // e.target.dataset.language
+  console.log(e.target.parentElement.dataset.language);
 })
