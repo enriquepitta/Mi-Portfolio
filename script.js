@@ -20,9 +20,14 @@ toggleTheme.addEventListener("click", () => {
   toggleText.textContent = (toggleText.textContent == "Dark" ? "Light" : "Dark")
 })
 
-toggleLenguajes.addEventListener("click", () => { 
+toggleLenguajes.addEventListener("click", (e) => { 
   toggleLenguajes.classList.toggle("active")
   toggleLenguajesText.textContent = (toggleLenguajesText.textContent == "English" ? "Español" : "English")
-  
+})
 
+toggleLenguajes.addEventListener("click", (e) => {
+  let lang = e.target.parentElement.dataset.languaje
+  lang = (lang == "en" ? "es" : "en")
+  console.log(lang)
+  
 })
