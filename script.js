@@ -7,6 +7,8 @@ const toggleText = document.getElementById("toggle-text")
 const toggleColors = document.getElementById("toggle-colors")
 const rootStyles = document.documentElement.style
 
+
+
 toggleColors.addEventListener('click', (e) => {
   if (e.target.classList[0] === 'colors__item') {
     rootStyles.setProperty('--primary-color', e.target.dataset.color)
@@ -25,6 +27,20 @@ toggleLanguage.addEventListener("click", () => {
   toggleLanguageText.textContent = (toggleLanguageText.textContent == "English" ? "Español" : "English")
   toggleLanguage.dataset.language = (toggleLanguage.dataset.language == "en" ? "es" : "en")
 
-  console.log(toggleLanguage.dataset.language)
+  changeLanguage(toggleLanguage.dataset.language)
 })
 
+
+const textsToChange = document.querySelectorAll('[data-section]');
+
+
+const changeLanguage = async language => {
+  const requestJson = await fetch(`./languajes/${language}.json`)
+  const texts = await requestJson.json()
+
+  for (const textToChange of textsToChange) {
+    const section = textToChange.dataset.section
+    const value = textToChange.dataset.value
+    textToChange.textContent = texts[section][value]
+  }
+}

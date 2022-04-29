@@ -2,5 +2,40 @@
     "profile": {
         "rol": "Desarrollador Jr.",
         "description": "Estudiante de programación, con intenciones de superarme en todos los aspectos de mi vida, dando cada día lo mejor de mí, tanto en el aspecto laboral como en el aspecto personal."
+    },
+    "experiences": {
+        "title": "Experiencia",
+        "experience_description": "Realización de proyecto grupal, aplicación móvil para IOS utilizando Swift, Xcode, GitHub, cocoapods y otras herramientas."
+    },
+    "hobbies": {
+      "title": "Pasatiempos",
+
+      "title_hobby1": "Escuchar música",
+      "description_hobby1": "Me encanta la música, me gusta mucho escucharla, es mi entretenimiento favorito.",
+      "title_hobby2": "Andar en bicicleta",
+      "description_hobby2": "Me gusta andar en bicicleta con amigos los fines de semana, me resulta muy divertido hacer ejercicio de vez en cuando.",
+      "title_hobby3": "Leer",
+      "description_hobby3": "Me gusta leer porque es muy relajante y me ayuda mucho a aliviar el estrés.",
+      "title_hobby4": "Ajedrez",
+      "description_hobby4": "Me gusta el ajedrez porque me enseña a aprender de mis errores y ser menos impulsivo."
+    },
+    "skills": {
+        "title": "Habilidades",
+
+        "skills2": "Desarrolador Móvil",
+        "skills3": "Sistemas Operativos",
+        "skills4": "Herramientas"
+    },
+    "projects": {
+      "title": "Proyectos",
+
+      "project1": "Portafolio de proyectos realizados para mostrar proyectos futuros, utilizando tecnologías como; HTML, CSS y JavaScript. Totalmente receptivo, con un diseño modular, tarjetas y subtarjetas, con un conmutador para elegir entre los modos oscuro y claro, y un selector de color.",
+
+      "project2": "App diseñada para ver el estado del tiempo, con diseño responsive, utilizando la API de la página Open Weather Map, donde se obtienen los datos a través de un JSON, para esta app se toma la ¨Longitud¨ y ¨Latitud¨ para obtener la ubicación del usuario, quien deberá autorizar para que se tome su ubicación.",
+
+      "project3": "Proyecto grupal, aplicación de comida a domicilio, donde el usuario puede registrarse como cocinero o consumidor, utilizando tecnologías como Swift y Xcode.",
+
+      "botton1": "CÓDIGO",
+      "botton2": "PÁGINA"
     }
 }

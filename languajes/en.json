@@ -2,5 +2,38 @@
   "profile": {
     "rol": "Jr. Developer",
     "description": "Programming student, with the intention of improving myself in all aspects of my life, giving the best of me every day, both in the work aspect and in the personal aspect"
-  }
+  },
+  "experiences": {
+    "title": "Experience",
+    "experience_description": "Realization of group project, mobile application for IOS using Swift, Xcode, GitHub, cocoapods and other tools."
+  },
+  "hobbies": {
+    "title": "Hobbies",
+    "title_hobby1": "Listening to music",
+    "description_hobby1": "I love music, I really like listening to it, it's my favorite entertainment.",
+    "title_hobby2": "Biking",
+    "description_hobby2": "I like to ride my bike with friends on the weekends, I find it very fun to exercise from time to time.",
+    "title_hobby3": "Reading",
+    "description_hobby3": "I like to read because it is very relaxing and helps me a lot to relieve stress",
+    "title_hobby4": "Chess",
+    "description_hobby4": "I like chess because it teaches me to learn from my mistakes and be less impulsive."
+  },
+  "skills": {
+    "title": "Skills",
+
+    "skills2": "Mobile Developer",
+    "skills3": "Operating Systems",
+    "skills4": "Tools"
+  },
+    "projects": {
+      "title": "Proyectos",
+
+      "project1": "Portfolio of projects made to show future projects, using technologies such as; HTML, CSS and JavaScript. Fully responsive, with a modular design, cards and subcards, with a toggle to choose between dark and light modes, and a color selector.",
+
+      "botton1": "CODE",
+
+      "project2": "App designed to see the state of the weather, with responsive design, using the API of the Open Weather Map page, where the data is obtained through a JSON, for this app the ¨Longitude¨ and ¨Latitude¨ are taken to obtain the location of the user, who must authorize so that his location is taken.",
+
+      "project3": "Group project, food delivery application, where the user can register as a cook or consumer, using technologies such as Swift and Xcode."
+    }
 }

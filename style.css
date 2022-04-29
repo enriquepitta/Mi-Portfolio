@@ -436,8 +436,7 @@ img {
   margin-left: 1em;
 }
 .card__text {
-  margin-top: 0;
-  margin-left: 1em;
+  margin: 0 1em 1em;
 }
 .image__container-subcard {
   min-width: 320px;
