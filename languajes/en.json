@@ -30,10 +30,11 @@
 
       "project1": "Portfolio of projects made to show future projects, using technologies such as; HTML, CSS and JavaScript. Fully responsive, with a modular design, cards and subcards, with a toggle to choose between dark and light modes, and a color selector.",
 
-      "botton1": "CODE",
-
       "project2": "App designed to see the state of the weather, with responsive design, using the API of the Open Weather Map page, where the data is obtained through a JSON, for this app the ¨Longitude¨ and ¨Latitude¨ are taken to obtain the location of the user, who must authorize so that his location is taken.",
 
-      "project3": "Group project, food delivery application, where the user can register as a cook or consumer, using technologies such as Swift and Xcode."
+      "project3": "Group project, food delivery application, where the user can register as a cook or consumer, using technologies such as Swift and Xcode.",
+
+      "botton1": "CODE",
+      "botton2": "PAGE"
     }
 }

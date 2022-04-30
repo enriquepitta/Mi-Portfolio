@@ -9,6 +9,7 @@
   --border-radius: 0.4em;
   --skills-bar-lenght: 0%;
 }
+
 /* APLICANDO ALGUNAS PROPIEDADES A TODOS LOS ELEMENTOS */
 * {
   /* BOX MODEL */
@@ -17,40 +18,40 @@
   /* TEXT */
   font-family: "Montserrat", sans-serif;
 }
+
 /* ==================== HEADER ============================= */
 /* ESTILOS DEL HEADER */
 .header {
   /* BOX MODEL */
   display: flex;
-  
   height: 75px;
-
   padding: 0 2em;
   gap: 0px;
-  
+
   /* POSITION */
   align-items: center;
   justify-content: space-between;
-  
-  
+
   /* VISUAL */
   background-color: var(--background-card-color);
 
   /*OTROS*/
   transition: var(--transition);
 }
-/* SWITCHES CONTENEDOR, CAMBIO DE COLOR DARK/LIGHT MODE */
+
+/* ============ HEADER: TOGGLE DARK/LIGHT MODE Y IDIOMA ============= */
 .switches {
   /* BOX MODEL */
   display: flex;
   width: 40%;
+
   /* POSITION */
   align-items: center;
   gap: 5px;
 }
-/*======================= TOOGLE ===========================*/
+
 /* ESTILOS DEL TOGGLE */
-.toggle-theme {
+.toggle {
   /* POSITION */
   position: relative;
 
@@ -63,17 +64,20 @@
   background: var(--background-card-color);
   border-radius: 160px;
   box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
-    inset 0 8px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+    inset 0 8px 8px rgba(0, 0, 0, 0.1), inset 0 4px 4px rgba(0, 0, 0, 0.2);
+
   /* OTROS */
   transition: 0.5s;
   cursor: pointer;
 }
+
 /* ESTILOS AL ACTIVAR EL TOGGLE */
-#toggle-theme.active {
+.toggle.active {
   background: var(--background-card-color);
 }
+
 /* TOGGLE INDICATOR */
-#toggle-theme .indicator {
+.toggle .indicator {
   /* POSITION */
   position: absolute;
   top: 0;
@@ -89,56 +93,27 @@
   transform: scale(0.7);
   box-shadow: inset 0 4px 4px rgba(21, 20, 20, 0.5),
     inset 0 -4px 4px rgba(21, 20, 20, 0.5);
+
   /* OTROS */
   transition: 0.5s;
 }
+
 /* ESTILOS DEL TOGGLE-INDICATOR AL ACTIVAR EL TOGGLE */
-#toggle-theme.active .indicator {
+.toggle.active .indicator {
+  /* POSITION */
   left: 20px;
+
+  /* VISUAL */
   background: var(--primary-color);
   box-shadow: inset 0 4px 4px rgba(21, 20, 20, 0.5),
     inset 0 -4px 4px rgba(21, 20, 20, 0.5);
 }
 /* ESTILO DEL TOGGLE THEME TEXT */
-.toggle-theme__text {
+.toggle__text {
   font-size: 0.8em;
 }
-/* =============== TOGGLE LENGUAJES ================ */
 
-#toggle-language.active {
-  background: var(--background-card-color);
-}
-/* TOGGLE INDICATOR */
-#toggle-language .indicator {
-  /* POSITION */
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  /* BOX MODEL */
-  width: 20px;
-  height: 20px;
-
-  /* VISUAL */
-  background: var(--primary-color);
-  border-radius: 50%;
-  transform: scale(0.7);
-  box-shadow: inset 0 4px 4px rgba(21, 20, 20, 0.5),
-    inset 0 -4px 4px rgba(21, 20, 20, 0.5);
-  /* OTROS */
-  transition: 0.5s;
-}
-/* ESTILOS DEL TOGGLE-INDICATOR AL ACTIVAR EL TOGGLE */
-#toggle-language.active .indicator {
-  left: 20px;
-  background: var(--primary-color);
-  box-shadow: inset 0 4px 4px rgba(21, 20, 20, 0.5),
-    inset 0 -4px 4px rgba(21, 20, 20, 0.5);
-}
-.toggle__language-text {
-  font-size: 0.8em;
-}
-/* ================== COLORS ========================== */
+/* ================== HEADER: COLORS ========================== */
 /* ESTILOS DEL CONTENEDOR DE LOS COLORES */
 .colors {
   /* BOX MODEL */
@@ -149,6 +124,7 @@
   /* POSITION */
   align-items: center;
 }
+
 /* ESTILOS DE LOS ITEM COLORS */
 .colors__item {
   /* BOX MODEL */
@@ -162,12 +138,10 @@
   /* OTROS */
   cursor: pointer;
 }
+
 /* ASIGNANDO EL COLOR A LOS ITEMS */
 .colors__item-aqua {
   --primary-color: #00e8c0;
-}
-.colors__item-green {
-  --primary-color: hsl(150, 84%, 56%);
 }
 .colors__item-blue {
   --primary-color: #035397;
@@ -179,8 +153,9 @@
   --primary-color: #5800ff;
 }
 .colors__item-yellow {
-  --primary-color: #F7FF93;
+  --primary-color: #f7ff93;
 }
+
 /* ====================== BODY ========================== */
 /* ESTILOS DEL BODY */
 body {
@@ -193,38 +168,46 @@ body {
   /* OTROS */
   transition: var(--transition);
 }
+
 /* ESTILOS DEL BODY CUANDO TENGA LA CLASE DARK */
-/* CAMBIOS PARA EL TEXT-COLOR Y BACKGROUND-COLOR */
+/* CAMBIOS PARA EL TEXT-COLOR, BACKGROUND-COLOR Y BACKGROUND CARD COLOR */
 body.dark {
-  --text-color: hsl(0, 0%, 83%);
+  /* VISUAL */
   --backgraund-color: #121212;
   --background-card-color: #202020;
   --background-subcard-color: rgb(27, 26, 26);
+  
+  /* TEXT */
+  --text-color: hsl(0, 0%, 83%);
 }
+
 /* ESTILOS PARA LOS ENLACES */
 a {
   color: var(--primary-color);
   text-decoration: none;
 }
+
 /* PARA EVITAR QUE LAS IMAGENES DESVORDEN SU CONTENEDOR */
 img {
   max-width: 100%;
   display: block;
 }
-/* PARA MOBILES */
+
+/* ESTILOS PARA EL MAIN */
 .main {
   display: grid;
   padding: 1em;
   gap: 1em;
 }
+
 /* MEDIA QUERIES */
 @media screen and (min-width: 720px) {
   .main {
     grid-template-columns: min-content 1fr;
   }
 }
-/* ============ ESTILOS-COLUMNA LEFT =================== */
-.column--left {
+/* ============ ESTILOS-COLUMN LEFT =================== */
+.column {
   display: grid;
   gap: 1em;
   height: fit-content;
@@ -358,7 +341,7 @@ img {
 .skills__bar--40::after {
   --skills-bar-lenght: 40%;
 }
-.skills__bar--45::after{
+.skills__bar--45::after {
   --skills-bar-lenght: 45%;
 }
 .skills__bar--50::after {

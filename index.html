@@ -14,23 +14,26 @@
 </head>
 
 <body class="dark" >
-    <!-- HEADER, CONTENEDOR DEL SWITCH (DARK MODE) Y COLORES -->
+    <!-- HEADER, CONTENEDOR DEL TOGGLE DARK/LIGHT MODE, IDIOMA Y COLORES -->
     <header class="header">
-        <!-- CONTENEDOR DEL SWIFT (DARK MODE) -->
+        <!-- CONTENEDOR DEL TOGGLE (DARK MODE) -->
         <div class="switches">
-            <!-- CONTENEDOR DEL INDICADOR DARK/LIGHT MODE Y TITULO -->
-            <div id="toggle-theme" class="toggle-theme">
+            <!-- CONTENEDOR DEL INDICADOR DARK/LIGHT MODE Y EL TEXTO -->
+            <div id="toggle" class="toggle">
+                <!-- INDICADOR -->
                 <i class="indicator"></i>
             </div>
-            <p id="toggle-text" class="toggle-theme__text">Dark</p>
+            <p id="toggle__text" class="toggle__text">Dark</p>
         </div>
-        
+
+        <!-- CONTENEDOR DEL TOGGLE DE IDIOMA -->
         <div class="switches">
             <!-- COTENEDOR DEL INDICADOR DEL IDIOMA Y TEXTO -->
-            <div id="toggle-language" class="toggle-theme" data-language="en">
+            <div id="toggle__language" class="toggle" data-language="en">
+                <!-- INDICADOR -->
                 <i class="indicator"></i>
             </div>
-            <p id="english" class="toggle__language-text">English</p>
+            <p id="toggle__language-text" class="toggle__text toggle__language-text">English</p>
         </div>
 
         <!-- CONTENEDOR DEL SELECTOR DE LOS COLORES -->
@@ -46,6 +49,7 @@
             <div data-color="#F7FF93" class="colors__item colors__item-yellow"></div>
         </div>
     </header>
+
     <!-- MAIN, CONTENIDO DEL PORTFOLIO -->
     <main class="main">
         <!-- COLUMNA DE LA IZQUIERDA -->

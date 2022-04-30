@@ -1,9 +1,9 @@
 // OBTENER ELEMENTOS ATRAVEZ DE SU ID
-const toggleTheme = document.getElementById("toggle-theme")
-const toggleLanguage = document.getElementById("toggle-language")
-const toggleLanguageText = document.getElementById("english")
+const toggle = document.getElementById("toggle")
+const toggleLanguage = document.getElementById("toggle__language")
+const toggleLanguageText = document.getElementById("toggle__language-text")
 
-const toggleText = document.getElementById("toggle-text")
+const toggleText = document.getElementById("toggle__text")
 const toggleColors = document.getElementById("toggle-colors")
 const rootStyles = document.documentElement.style
 
@@ -16,9 +16,9 @@ toggleColors.addEventListener('click', (e) => {
 })
 
 // CUANDO ESCUCHA EL CLICK CAMBIAR LA CLASE AL BODY Y AL TOGGLE
-toggleTheme.addEventListener("click", () => {
+toggle.addEventListener("click", () => {
   document.body.classList.toggle("dark")
-  toggleTheme.classList.toggle("active")
+  toggle.classList.toggle("active")
   toggleText.textContent = (toggleText.textContent == "Dark" ? "Light" : "Dark")
 })
 
