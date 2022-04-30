@@ -352,8 +352,14 @@ img {
 .skills__bar--30::after {
   --skills-bar-lenght: 30%;
 }
+.skills__bar--35::after {
+  --skills-bar-lenght: 35%;
+}
 .skills__bar--40::after {
   --skills-bar-lenght: 40%;
+}
+.skills__bar--45::after{
+  --skills-bar-lenght: 45%;
 }
 .skills__bar--50::after {
   --skills-bar-lenght: 50%;
