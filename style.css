@@ -304,18 +304,6 @@ img {
   gap: 1em;
 }
 /* ESTILOS DEL CONTENEDOR DEL TITULO Y LAS SKILLS */
-.card-skills {
-  /* BOX MODEL */
-  padding: 1em;
-
-  /* VISUAL */
-  background-color: var(--background-card-color);
-  border-radius: var(--border-radius);
-  border-top: 4px solid var(--primary-color);
-  height: max-content;
-}
-
-
 
 /* ESTILOS PARA LOS SKILLS */
 .skills__item {
@@ -441,6 +429,7 @@ img {
 .container__all-projects {
   display: grid;
   gap: 1em;
+
 }
 .card__container-projects {
   display: grid;
