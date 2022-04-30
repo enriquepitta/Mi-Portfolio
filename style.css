@@ -215,25 +215,37 @@ img {
 
 /* ESTILOS PARA LAS TARJETAS */
 .card {
+  /* BOX MODEL */
   display: grid;
   padding: 1em;
   gap: 1em;
+  
+  /* VISUAL */
   background-color: var(--background-card-color);
   border-radius: var(--border-radius);
   border-top: 4px solid var(--primary-color);
+
+  /* OTROS */
 }
 
 /* ESTILOS PARA LAS SUBTARJETAS */
 .card__subcard {
   /* VISUAL */
   background-color: var(--background-subcard-color);
+
   /* border: 4px solid var(--primary-color); */
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 2.5);
   padding: 1em;
   border-radius: var(--border-radius);
-  position: relative;
-}
 
+  /* OTROS */
+  position: relative;
+  transition: var(--transition);
+}
+.card--profile{
+  padding-bottom: 0;
+  gap: 0;
+}
 /* ESTILOS PARA EL CONTENEDOR DE LA IMAGEN */
 .card__image-container {
   min-width: 320px;
@@ -241,10 +253,11 @@ img {
   overflow: hidden;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 2.5);
 }
+
 /* ESTILOS PARA LOS TEXTOS */
 .text-profile {
-  margin: 0;
-  font-size: 0.9em;
+  
+  font-size: 0.8em;
   line-height: 1.5;
 }
 .card__header {
@@ -268,6 +281,7 @@ img {
   /* BOX MODEL */
   display: flex;
   margin-bottom: 0.6em;
+  font-size: 0.8em;
 }
 .card__text {
   font-size: 0.9rem;
@@ -275,7 +289,7 @@ img {
 }
 .icon {
   margin-right: 1em;
-  width: 20px;
+  width: 15px;
 }
 
 .card__title-skills {
@@ -374,36 +388,27 @@ img {
   margin: 0.6em 0;
   font-size: 0.8rem;
 }
+
 /* ========= ESTILOS TARJETA DE EXPERIENCIAS =============== */
-.experience {
+.subcard__experience {
   /* BOX MODEL */
   display: flex;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  padding: 1em;
   align-items: start;
-
-  /* VISUAL */
-  background-color: var(--background-subcard-color);
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 2.5);
-  border-radius: var(--border-radius);
-
-  /* OTROS */
-  transition: var(--transition);
 }
+
 .experience__image {
   max-width: 20%;
 }
+
 .experience__info {
-  margin-top: -1em;
-  margin-left: 1em;
+  margin: -1em 0em 0em 1em;
 }
+
 .experience__time {
   font-size: 0.8em;
 }
 .experience__job {
   color: var(--primary-color);
-  transition: var(--transition);
   margin: 0;
 }
 .experience__description {
