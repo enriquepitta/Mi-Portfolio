@@ -223,6 +223,17 @@ img {
   border-top: 4px solid var(--primary-color);
 }
 
+/* ESTILOS PARA LAS SUBTARJETAS */
+.card__subcard {
+  /* VISUAL */
+  background-color: var(--background-subcard-color);
+  /* border: 4px solid var(--primary-color); */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 2.5);
+  padding: 1em;
+  border-radius: var(--border-radius);
+  position: relative;
+}
+
 /* ESTILOS PARA EL CONTENEDOR DE LA IMAGEN */
 .card__image-container {
   min-width: 320px;
@@ -289,16 +300,7 @@ img {
   border-top: 4px solid var(--primary-color);
   height: max-content;
 }
-/* ESTILOS PARA LAS SUBTARJETAS */
-.card__sub {
-  /* VISUAL */
-  background-color: var(--background-subcard-color);
-  /* border: 4px solid var(--primary-color); */
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 2.5);
-  padding: 1em;
-  border-radius: var(--border-radius);
-  position: relative;
-}
+
 
 
 /* ESTILOS PARA LOS SKILLS */
@@ -408,11 +410,7 @@ img {
   font-size: 0.8em;
 }
 /* ====================== CARD HOBBIES ====================== */
-/* ESTILOS PARA EL CONTENEDOR DE LOS HOBBIES */
-/* .card--hobbies {
-  display: grid;
-  gap: 1em;
-} */
+
 .card__sub-hobbies {
   padding: 0;
 }
@@ -451,7 +449,7 @@ img {
 .card__info-project {
   margin: 0.5em 0.5em;
 }
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .card__container-projects {
     display: flex;
     flex-direction: column;
@@ -500,7 +498,7 @@ img {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 2.5);
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .buttons {
     display: flex;
     position: absolute;
