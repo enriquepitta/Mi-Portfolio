@@ -297,13 +297,13 @@ img {
   margin: 0;
   margin-bottom: 0.7em;
 }
+
 /* ESTILOS PARA EL CONTENEDOR DE SKILLS */
 .card__container-skills {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
   gap: 1em;
 }
-/* ESTILOS DEL CONTENEDOR DEL TITULO Y LAS SKILLS */
 
 /* ESTILOS PARA LOS SKILLS */
 .skills__item {
