@@ -5,7 +5,8 @@
     },
     "experiences": {
         "title": "Experiencia",
-        "experience_description": "Realización de proyecto grupal, aplicación móvil para IOS utilizando Swift, Xcode, GitHub, cocoapods y otras herramientas."
+        "experience_description1": "Realización de proyecto grupal, aplicación móvil para IOS utilizando Swift, Xcode, GitHub, cocoapods y otras herramientas.",
+        "experience_description2": "Miembro del área de producto, a cargo de la aplicación web y IOS, utilizando lenguajes como Java (Spring Boot), Python (Django), JavaScript (jQuery), Swift (Cocoapods), HTML y CSS (Bootstrap) y Postgresql. Aparte de otras herramientas como; Jira, Bitbucket, Slack y Figma."
     },
     "hobbies": {
       "title": "Pasatiempos",
